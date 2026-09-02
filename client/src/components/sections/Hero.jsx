@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { ArrowRight, Zap, MessageCircle, CheckCircle, Calendar, Clock, Video } from "lucide-react";
 import { Button } from "../ui/Button";
 import { useCountdown } from "../../hooks/useCountdown";
-import { WORKSHOP } from "../../utils/constants";
+import { WORKSHOP, asset } from "../../utils/constants";
 import { getWhatsAppLink } from "../../utils/formatters";
 
 const CountdownUnit = ({ value, label }) => (
@@ -140,7 +140,7 @@ export const Hero = () => {
                   style={{ animation: "float3d 6s ease-in-out infinite", transformStyle: "preserve-3d", perspective: "800px" }}
                 >
                   <img
-                    src="/pradeep-half-banner.png"
+                    src={asset("/pradeep-half-banner.png")}
                     alt="Pradip Kadam — Nutritionist and Pre-Diabetes Weight Loss Coach"
                     className="w-full max-w-md aspect-square object-cover lg:max-w-lg"
                     loading="eager"
@@ -175,7 +175,7 @@ export const Hero = () => {
                 </svg>
                 <div className="overflow-hidden rounded-full border-[3px] border-emerald-200 shadow-[0_10px_40px_rgba(16,185,129,0.15)]">
                   <img
-                    src="/pradeep-half-banner.png"
+                    src={asset("/pradeep-half-banner.png")}
                     alt="Pradip Kadam — Nutritionist and Pre-Diabetes Weight Loss Coach"
                     className="w-full max-w-xs aspect-square object-cover"
                     loading="eager"

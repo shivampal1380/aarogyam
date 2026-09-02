@@ -2,66 +2,67 @@ import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { SectionHeading } from "../ui/SectionHeading";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
+import { asset } from "../../utils/constants";
 
 const stories = [
   {
-    src: "/Ankita.png",
+    src: asset("/Ankita.png"),
     alt: "Ankita",
     loss: "14 kg Lost",
     duration: "6 Months",
     text: "I am 53, transforming my health from <b>fat to fit</b>. By following a <b>balanced diet</b>, avoiding <b>processed foods</b>, and staying consistent with <b>walking and strength training</b>, I lost <b>14 kg in 6 months</b> and reduced significant belly fat. Today, I can run a <b>10 km marathon</b> and hold a <b>4–5 minutes plank hold</b>. This journey taught me that <b>commitment and self-care</b> truly change life.\n— <b>Ankita</b>",
   },
   {
-    src: "/Sampada.png",
+    src: asset("/Sampada.png"),
     alt: "Sampada",
     loss: "11.6 kg Lost",
     duration: "3 Months",
     text: "I was suffering from <b>severe back pain</b>, and my doctor even advised me <b>not to bend</b>. Daily household work had become very difficult.\n\nIn just <b>3 months</b>, I lost <b>11.6 kg</b>, and my <b>back pain improved significantly</b>. Today, I can comfortably do all my <b>household work without fear</b>. This journey gave me not just weight loss, but <b>relief and confidence</b>.\n— <b>Sampada</b>",
   },
   {
-    src: "/Pinky.png",
+    src: asset("/Pinky.png"),
     alt: "Pinky",
     loss: "40 kg Lost",
     duration: "11 Months",
     text: "I joined this community after seeing my brother <b>lose 40 kg</b>. At that time, I weighed <b>98.4 kg</b> and decided to change my life. With the guidance of Coaches <b>Anita and Pradip</b>, I improved my habits and in <b>11 months lost 40 kg</b>, reaching <b>59 kg</b>. Now I feel <b>lighter, confident, and focused</b> on staying healthy for life. 💪\n— <b>Pinky</b>",
   },
   {
-    src: "/Megha-Patil.png",
+    src: asset("/Megha-Patil.png"),
     alt: "Megha Patil",
     loss: "17 kg Lost",
     duration: "5 Months",
     text: "In just <b>5 months</b>, I lost <b>17 kg and 9 inches</b> through consistent efforts and the right guidance. Along with weight loss, my <b>energy levels improved, breathlessness reduced</b>, and I feel <b>more confident and healthy</b>.\n\nThis journey proves that with <b>discipline and consistency</b>, lasting transformation is possible.\n— <b>Megha Patil</b>",
   },
   {
-    src: "/Maruti-Kaka.png",
+    src: asset("/Maruti-Kaka.png"),
     alt: "Maruti Kaka",
     loss: "23 kg Lost",
     duration: "6 Months",
     text: "At the age of <b>65</b>, I decided to transform my health. In just <b>6 months</b>, I lost <b>23 kg</b> and reduced <b>5–6 inches from my waist</b>, which greatly improved my health and confidence. With my doctor's guidance, I was able to <b>stop insulin injections</b> and switch to oral medication.\n\nThis journey has proved to me that with <b>discipline, consistency, and the right support</b>, healthy transformation is possible at any age.\n— <b>Maruti Kaka</b>",
   },
   {
-    src: "/Manisha.png",
+    src: asset("/Manisha.png"),
     alt: "Manisha",
     loss: "22 kg Lost",
     duration: "Maintained",
     text: "I never imagined I could transform my life like this. I lost <b>22 kg</b>, overcame <b>depression</b>, got rid of <b>constant body pain</b>, and today I can proudly complete <b>100 Surya Namaskars</b> without any pain. <b>NOW I am maintaining this weight from 2024.</b> I feel <b>healthier, stronger, and more confident</b> than ever. Thank you for guiding me towards a new and healthier life!\n— <b>Manisha</b>",
   },
   {
-    src: "/Anju-Yadav.jpg",
+    src: asset("/Anju-Yadav.jpg"),
     alt: "Anju Yadav",
     loss: "29 kg Lost",
     duration: "Journey",
     text: "Before joining the community, I was suffering from <b>knee pain, cervical issues, and constant back pain</b>. Walking and climbing stairs were difficult, and I felt <b>tired most of the time</b>.\n\nAfter becoming a part of the community, my life changed completely. Today, I can easily <b>walk 4–5 km daily</b>, my pain has reduced, and I feel <b>energetic throughout the day</b>.\n\nMy biggest achievement is losing <b>29 kg of weight</b>. Heartfelt thanks to <b>Coach Anita and Pradip</b> from Panvel for their constant guidance and support.\n\nIf I can do it, anyone can. 💛\n— <b>Anju Yadav</b>",
   },
   {
-    src: "/Anita-Kadam.jpeg",
+    src: asset("/Anita-Kadam.jpeg"),
     alt: "Anita Kadam",
     loss: "10 kg Gained",
     duration: "8 Months",
     text: "When I started my journey, I was struggling with <b>poor health, low energy, and digestive issues</b>. With the right <b>nutrition, nutritional supplements, and consistent guidance</b>, my body gradually healed. Over the next <b>8 months</b>, I gained <b>10 kg in a healthy way</b>, my <b>digestion improved</b>, and I regained my <b>strength and confidence</b>. Today, I feel <b>healthier, more energetic, and happier</b> than ever. I'm truly grateful for this <b>life-changing transformation</b>.\n— <b>Anita</b>",
   },
   {
-    src: "/Dakshata-Pawar.jpeg",
+    src: asset("/Dakshata-Pawar.jpeg"),
     alt: "Dakshata Pawar",
     loss: "22 kg Lost",
     duration: "13 Years",

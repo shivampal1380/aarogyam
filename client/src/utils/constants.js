@@ -12,6 +12,8 @@ export const WORKSHOP = {
 export const GOOGLE_SHEETS_URL = import.meta.env.VITE_GOOGLE_SHEETS_URL || "";
 export const RAZORPAY_PAYMENT_URL = import.meta.env.VITE_RAZORPAY_PAYMENT_URL || "https://pages.razorpay.com/pl_TDkjJ5JipKcrxH/view";
 
+export const asset = (path) => import.meta.env.BASE_URL + path.replace(/^\//, "");
+
 export const STATS = [
   { value: 15, suffix: "+", label: "Years Experience" },
   { value: 3000, suffix: "+", label: "Transformations" },

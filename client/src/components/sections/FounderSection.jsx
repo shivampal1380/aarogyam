@@ -2,6 +2,7 @@ import { Award, TrendingDown, Heart, Clock } from "lucide-react";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Card } from "../ui/Card";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
+import { asset } from "../../utils/constants";
 
 export const FounderSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -24,7 +25,7 @@ export const FounderSection = () => {
             <div className="grid gap-0 md:grid-cols-2">
               <div className="relative min-h-[320px] md:min-h-[520px]">
                 <img
-                  src="/pradeep-half-banner.png"
+                  src={asset("/pradeep-half-banner.png")}
                   alt="Pradip Kadam"
                   className="absolute inset-0 h-full w-full object-cover object-top"
                   loading="lazy"

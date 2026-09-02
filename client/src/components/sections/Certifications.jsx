@@ -3,12 +3,13 @@ import { Award, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { SectionHeading } from "../ui/SectionHeading";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
+import { asset } from "../../utils/constants";
 
 const certificates = [
-  { src: "/cert-1.png", alt: "Certification 1" },
-  { src: "/cert-2.jpg", alt: "Certification 2" },
-  { src: "/cert-3.jpg", alt: "Certification 3" },
-  { src: "/cert-4.jpg", alt: "Certification 4" },
+  { src: asset("/cert-1.png"), alt: "Certification 1" },
+  { src: asset("/cert-2.jpg"), alt: "Certification 2" },
+  { src: asset("/cert-3.jpg"), alt: "Certification 3" },
+  { src: asset("/cert-4.jpg"), alt: "Certification 4" },
 ];
 
 export const Certifications = () => {
