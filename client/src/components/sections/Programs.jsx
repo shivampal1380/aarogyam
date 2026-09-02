@@ -10,7 +10,7 @@ export const Programs = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="programs" className="bg-gray-50 py-20 sm:py-28">
+    <section id="programs" className="bg-gray-50 py-14 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Our Programs"

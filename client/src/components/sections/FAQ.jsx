@@ -37,7 +37,7 @@ export const FAQ = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="faq" className="bg-gray-50 py-20 sm:py-28">
+    <section id="faq" className="bg-gray-50 py-14 sm:py-28">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Frequently Asked Questions"

@@ -121,7 +121,7 @@ export const SuccessStories = () => {
   const handleTransitionEnd = () => setIsTransitioning(false);
 
   return (
-    <section className="bg-gray-50 py-20 sm:py-28 overflow-hidden">
+    <section className="bg-gray-50 py-14 sm:py-28 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Success Stories"
@@ -130,7 +130,7 @@ export const SuccessStories = () => {
 
         <div
           ref={ref}
-          className={`mx-auto mt-12 max-w-4xl transition-all duration-700 ${
+            className={`mx-auto mt-6 max-w-4xl transition-all duration-700 sm:mt-12 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >

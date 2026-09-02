@@ -6,12 +6,12 @@ export const SectionHeading = ({ badge, title, subtitle, center = true, badgeCla
   return (
     <div
       ref={ref}
-      className={`mb-12 transition-all duration-700 ${
+      className={`mb-8 transition-all duration-700 sm:mb-12 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       } ${center ? "text-center" : ""}`}
     >
       {badge && (
-        <span className={`mb-3 inline-block rounded-full bg-emerald-100 px-7 py-3 text-xl font-extrabold text-emerald-700 sm:text-2xl lg:text-3xl ${badgeClassName}`}>
+        <span className={`mb-3 inline-block rounded-full bg-emerald-100 px-5 py-2 text-lg font-extrabold text-emerald-700 sm:px-7 sm:py-3 sm:text-2xl lg:text-3xl ${badgeClassName}`}>
           {badge}
         </span>
       )}

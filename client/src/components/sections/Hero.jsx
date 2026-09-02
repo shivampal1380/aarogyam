@@ -33,8 +33,8 @@ export const Hero = () => {
         />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-18 lg:px-8 lg:py-0 lg:min-h-screen lg:flex lg:items-center">
-        <div className="grid items-center gap-12 pt-14 pb-10 lg:grid-cols-2 lg:gap-16 lg:py-24">
+      <div className="relative mx-auto max-w-7xl px-4 pt-8 pb-6 sm:px-6 sm:py-18 lg:px-8 lg:py-0 lg:min-h-screen lg:flex lg:items-center">
+        <div className="grid items-center gap-10 pt-6 pb-6 lg:grid-cols-2 lg:gap-16 lg:py-24">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}

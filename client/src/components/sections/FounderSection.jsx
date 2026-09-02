@@ -8,7 +8,7 @@ export const FounderSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="founder" className="bg-gray-50 py-20 sm:py-28">
+    <section id="founder" className="bg-gray-50 py-14 sm:py-28">
       <div className="mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Meet the Coach"

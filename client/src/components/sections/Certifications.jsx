@@ -17,7 +17,7 @@ export const Certifications = () => {
   const [preview, setPreview] = useState(null);
 
   return (
-    <section className="bg-white py-20 sm:py-28">
+    <section className="bg-white py-14 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Certifications"
@@ -26,7 +26,7 @@ export const Certifications = () => {
 
         <div
           ref={ref}
-          className={`mx-auto mt-12 max-w-5xl transition-all duration-700 ${
+          className={`mx-auto mt-6 max-w-5xl transition-all duration-700 sm:mt-12 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >

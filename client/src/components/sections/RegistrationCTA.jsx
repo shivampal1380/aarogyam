@@ -7,7 +7,7 @@ export const RegistrationCTA = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="hero-gradient py-20 sm:py-28">
+    <section className="hero-gradient py-14 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
           ref={ref}

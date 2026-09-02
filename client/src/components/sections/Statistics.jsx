@@ -6,7 +6,7 @@ export const Statistics = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.3 });
 
   return (
-    <section className="hero-gradient py-20 sm:py-28">
+    <section className="hero-gradient py-14 sm:py-28">
       <div
         ref={ref}
         className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
@@ -31,7 +31,7 @@ export const Statistics = () => {
           ))}
         </div>
 
-        <div className="mt-12 flex justify-center">
+                <div className="mt-6 flex justify-center sm:mt-12">
           <div className="glass-dark rounded-2xl px-8 py-4 text-center">
             <div className="flex items-center justify-center gap-2">
               <div className="flex text-amber-400">
