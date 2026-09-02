@@ -19,7 +19,7 @@ export const ThisIsForYou = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="bg-gray-50 py-14 sm:py-28">
+    <section className="bg-gray-50 py-10 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="This Is For You If"
@@ -35,7 +35,7 @@ export const ThisIsForYou = () => {
           <Card className="border-emerald-100 bg-emerald-50/30">
             <div className="grid gap-4 sm:grid-cols-2">
               {reasons.map((item) => (
-                <div key={item} className="flex items-start gap-3 rounded-xl border border-emerald-100 bg-white p-5">
+                <div key={item} className="flex items-start gap-3 rounded-xl border border-emerald-100 bg-white p-4">
                   <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-emerald-500" strokeWidth={2} />
                   <span className="text-sm text-gray-700 leading-relaxed sm:text-base sm:font-medium">{item}</span>
                 </div>

@@ -17,7 +17,7 @@ export const Certifications = () => {
   const [preview, setPreview] = useState(null);
 
   return (
-    <section className="bg-white py-14 sm:py-28">
+    <section className="bg-white py-10 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Certifications"

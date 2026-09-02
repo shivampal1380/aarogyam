@@ -6,12 +6,12 @@ export const Statistics = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.3 });
 
   return (
-    <section className="hero-gradient py-14 sm:py-28">
+    <section className="hero-gradient py-10 sm:py-28">
       <div
         ref={ref}
         className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
       >
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-5 md:grid-cols-4 sm:gap-8">
           {STATS.map((stat, index) => (
             <div
               key={stat.label}
@@ -20,13 +20,13 @@ export const Statistics = () => {
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="text-4xl font-extrabold text-white sm:text-5xl">
+              <div className="text-3xl font-extrabold text-white sm:text-5xl">
                 {isVisible && (
                   <CountUp end={stat.value} duration={2.5} separator="," />
                 )}
                 {stat.suffix}
               </div>
-              <p className="mt-2 text-sm text-white/70 sm:text-base">{stat.label}</p>
+              <p className="mt-2 text-xs text-white/70 sm:text-base">{stat.label}</p>
             </div>
           ))}
         </div>

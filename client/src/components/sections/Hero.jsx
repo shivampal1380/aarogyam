@@ -33,8 +33,8 @@ export const Hero = () => {
         />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 pt-8 pb-6 sm:px-6 sm:py-18 lg:px-8 lg:py-0 lg:min-h-screen lg:flex lg:items-center">
-        <div className="grid items-center gap-10 pt-6 pb-6 lg:grid-cols-2 lg:gap-16 lg:py-24">
+      <div className="relative mx-auto max-w-7xl px-4 pt-6 pb-4 sm:px-6 sm:py-18 lg:px-8 lg:py-0 lg:min-h-screen lg:flex lg:items-center">
+        <div className="grid items-center gap-8 pt-4 pb-4 lg:grid-cols-2 lg:gap-16 lg:py-24">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -44,7 +44,7 @@ export const Hero = () => {
 
             <h1
               className="font-extrabold leading-[1.08] text-gray-900"
-              style={{ fontSize: "clamp(34px, 5vw, 58px)" }}
+              style={{ fontSize: "clamp(28px, 5vw, 58px)" }}
             >
               Transform Your Health &<br />
               <span className="text-emerald-600">Lose Weight Naturally</span>
@@ -54,7 +54,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-4 flex flex-wrap items-center justify-center gap-2 lg:justify-start"
+               className="mt-3 flex flex-wrap items-center justify-center gap-2 lg:justify-start"
             >
               {["Lose Weight", "Reverse Pre-Diabetes", "Build Healthy Habits"].map((tag) => (
                 <span key={tag} className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 sm:text-sm">
@@ -67,7 +67,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="mt-5 max-w-lg text-base text-gray-600 sm:text-lg"
+              className="mt-4 max-w-lg text-sm text-gray-600 sm:text-lg"
               style={{ lineHeight: 1.7 }}
             >
               <strong className="text-gray-900">Get Personalized Nutrition Guidance from a Certified Nutritionist</strong>
@@ -87,7 +87,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="mt-8 flex flex-col items-center gap-3 sm:flex-row lg:justify-start"
+              className="mt-6 flex flex-col items-center gap-3 sm:flex-row lg:justify-start"
             >
               <Link to="/register">
                 <Button size="lg" className="animate-pulse-glow animate-shimmer">
@@ -148,8 +148,8 @@ export const Hero = () => {
                   />
                 </div>
                 <div className="absolute -bottom-6 inset-x-0 mx-6 rounded-2xl border border-emerald-100 bg-white/90 px-6 py-5 text-center shadow-xl shadow-emerald-900/5 backdrop-blur-xl sm:-bottom-7 sm:mx-8">
-                  <p className="text-2xl font-extrabold text-gray-900">Pradip Kadam</p>
-                  <p className="mt-1 text-lg font-bold text-emerald-600">Nutritionist & Pre-Diabetes Weight Loss Coach</p>
+                  <p className="text-xl font-extrabold text-gray-900">Pradip Kadam</p>
+                  <p className="mt-1 text-sm font-bold text-emerald-600">Nutritionist & Pre-Diabetes Weight Loss Coach</p>
                 </div>
               </div>
 
@@ -183,7 +183,7 @@ export const Hero = () => {
                   />
                 </div>
                 <div className="absolute -bottom-6 inset-x-0 mx-4 rounded-2xl border border-emerald-100 bg-white/90 px-5 py-4 text-center shadow-xl shadow-emerald-900/5 backdrop-blur-xl">
-                  <p className="text-2xl font-extrabold text-gray-900">Pradip Kadam</p>
+                  <p className="text-xl font-extrabold text-gray-900">Pradip Kadam</p>
                   <p className="mt-0.5 text-xs font-bold text-emerald-600">Nutritionist & Pre-Diabetes Weight Loss Coach</p>
                 </div>
               </div>

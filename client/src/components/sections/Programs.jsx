@@ -10,7 +10,7 @@ export const Programs = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="programs" className="bg-gray-50 py-14 sm:py-28">
+    <section id="programs" className="bg-gray-50 py-10 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Our Programs"
@@ -26,11 +26,11 @@ export const Programs = () => {
           {PROGRAMS.map((program) => (
             <Card key={program.id} hover className="overflow-hidden">
               <div className={`h-2 w-full bg-gradient-to-r ${program.gradient}`} />
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900">{program.title}</h3>
-                <p className="mt-3 text-gray-500 leading-relaxed">{program.description}</p>
+              <div className="p-6 sm:p-8">
+                <h3 className="text-xl font-bold text-gray-900 sm:text-2xl">{program.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-gray-500 sm:text-base">{program.description}</p>
 
-                <div className="mt-6 space-y-3">
+                <div className="mt-5 space-y-3">
                   {program.benefits.map((benefit) => (
                     <div key={benefit} className="flex items-start gap-3">
                       <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-emerald-500" />
@@ -39,7 +39,7 @@ export const Programs = () => {
                   ))}
                 </div>
 
-                <div className="mt-8">
+                <div className="mt-6">
                   <Link to="/register">
                     <Button className="w-full" size="lg">
                       Book Consultation

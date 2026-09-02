@@ -25,7 +25,7 @@ export const WhatYouWillGet = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="bg-white py-14 sm:py-28">
+    <section className="bg-white py-10 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="What You'll Get"
@@ -39,8 +39,8 @@ export const WhatYouWillGet = () => {
           }`}
         >
           <Card className="border-emerald-100 bg-emerald-50/50">
-            <h3 className="mb-5 text-lg font-bold text-gray-900">What You'll Get</h3>
-            <ul className="space-y-3">
+            <h3 className="mb-3 text-lg font-bold text-gray-900">What You'll Get</h3>
+            <ul className="space-y-2 sm:space-y-3">
               {benefits.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500">
@@ -53,8 +53,8 @@ export const WhatYouWillGet = () => {
           </Card>
 
           <Card className="border-rose-100 bg-rose-50/50">
-            <h3 className="mb-5 text-lg font-bold text-gray-900">Who Can Join Me?</h3>
-            <ul className="space-y-3">
+            <h3 className="mb-3 text-lg font-bold text-gray-900">Who Can Join Me?</h3>
+            <ul className="space-y-2 sm:space-y-3">
               {whoCanJoin.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <Flag className="mt-0.5 h-4 w-4 shrink-0 text-rose-500" strokeWidth={2.5} />

@@ -8,7 +8,7 @@ export const FounderSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="founder" className="bg-gray-50 py-14 sm:py-28">
+    <section id="founder" className="bg-gray-50 py-10 sm:py-28">
       <div className="mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Meet the Coach"
@@ -23,7 +23,7 @@ export const FounderSection = () => {
         >
           <Card className="overflow-hidden">
             <div className="grid gap-0 md:grid-cols-2">
-              <div className="relative min-h-[320px] md:min-h-[520px]">
+              <div className="relative min-h-[260px] md:min-h-[520px]">
                 <img
                   src={asset("/pradeep-half-banner.png")}
                   alt="Pradip Kadam"
@@ -32,17 +32,17 @@ export const FounderSection = () => {
                 />
               </div>
 
-              <div className="flex flex-col justify-between p-8 md:p-10">
+              <div className="flex flex-col justify-between p-6 md:p-10">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 text-center">The Journey</h3>
-                  <hr className="my-4 border-gray-200" />
-                  <p className="mt-4 text-gray-600 text-justify leading-8" dangerouslySetInnerHTML={{ __html: 'From a Forensic Science student to a transformation coach, Pradip spent years struggling with <b>weight</b> and <b>low confidence</b>. Since childhood, unhealthy eating habits and lack of proper fitness knowledge made it difficult for him to maintain a healthy lifestyle.' }} />
-                  <p className="mt-3 text-gray-600 text-justify leading-8" dangerouslySetInnerHTML={{ __html: 'He tried several generic approaches such as random running routines and liquid diets, but nothing worked long term. Everything changed when he discovered the importance of <b>structured nutrition combined with proper exercise</b>.' }} />
-                  <p className="mt-3 text-gray-600 text-justify leading-8" dangerouslySetInnerHTML={{ __html: 'By following a disciplined approach to nutrition and fitness, Pradip achieved an incredible transformation — losing <b>28 kg and 7 inches in just 6 months</b>. Along with the physical change, he gained energy, confidence, and a completely new outlook on life.' }} />
-                  <p className="mt-3 text-gray-600 text-justify leading-8" dangerouslySetInnerHTML={{ __html: 'Today, he uses his personal experience and logical approach to health to guide others. His mission is to help people move away from confusing fad diets and build <b>sustainable habits</b> that create lifelong wellness.' }} />
+                  <h3 className="text-lg font-bold text-gray-900 text-center sm:text-xl">The Journey</h3>
+                  <hr className="my-3 border-gray-200" />
+                  <p className="mt-3 text-sm text-gray-600 text-justify leading-6 sm:mt-4 sm:leading-8" dangerouslySetInnerHTML={{ __html: 'From a Forensic Science student to a transformation coach, Pradip spent years struggling with <b>weight</b> and <b>low confidence</b>. Since childhood, unhealthy eating habits and lack of proper fitness knowledge made it difficult for him to maintain a healthy lifestyle.' }} />
+                  <p className="mt-2 text-sm text-gray-600 text-justify leading-6 sm:mt-3 sm:leading-8" dangerouslySetInnerHTML={{ __html: 'He tried several generic approaches such as random running routines and liquid diets, but nothing worked long term. Everything changed when he discovered the importance of <b>structured nutrition combined with proper exercise</b>.' }} />
+                  <p className="mt-2 text-sm text-gray-600 text-justify leading-6 sm:mt-3 sm:leading-8" dangerouslySetInnerHTML={{ __html: 'By following a disciplined approach to nutrition and fitness, Pradip achieved an incredible transformation — losing <b>28 kg and 7 inches in just 6 months</b>. Along with the physical change, he gained energy, confidence, and a completely new outlook on life.' }} />
+                  <p className="mt-2 text-sm text-gray-600 text-justify leading-6 sm:mt-3 sm:leading-8" dangerouslySetInnerHTML={{ __html: 'Today, he uses his personal experience and logical approach to health to guide others. His mission is to help people move away from confusing fad diets and build <b>sustainable habits</b> that create lifelong wellness.' }} />
                 </div>
 
-                <div className="mt-8 grid grid-cols-2 gap-4">
+                <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-8 sm:gap-4">
                   <div className="flex items-center gap-3 rounded-xl bg-emerald-50 p-3">
                     <Award className="h-5 w-5 text-emerald-600" />
                     <div>

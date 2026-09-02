@@ -121,7 +121,7 @@ export const SuccessStories = () => {
   const handleTransitionEnd = () => setIsTransitioning(false);
 
   return (
-    <section className="bg-gray-50 py-14 sm:py-28 overflow-hidden">
+    <section className="bg-gray-50 py-10 sm:py-28 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Success Stories"

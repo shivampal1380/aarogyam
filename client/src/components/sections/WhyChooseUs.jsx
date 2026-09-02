@@ -19,7 +19,7 @@ export const WhyChooseUs = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="py-14 sm:py-28">
+    <section className="py-10 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Why Us"
@@ -28,7 +28,7 @@ export const WhyChooseUs = () => {
 
         <div
           ref={ref}
-          className={`grid gap-6 sm:grid-cols-2 lg:grid-cols-4 transition-all duration-700 ${
+          className={`grid gap-5 sm:grid-cols-2 lg:grid-cols-4 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -41,11 +41,11 @@ export const WhyChooseUs = () => {
                 className="text-center"
                 style={{ transitionDelay: `${index * 50}ms` }}
               >
-                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100">
                   <Icon className="h-7 w-7 text-emerald-600" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900">{item.title}</h3>
-                <p className="mt-2 text-sm text-gray-500 leading-relaxed sm:text-base">{item.desc}</p>
+                <h3 className="text-base font-bold text-gray-900 sm:text-lg">{item.title}</h3>
+                <p className="mt-1.5 text-sm text-gray-500 leading-relaxed sm:text-base">{item.desc}</p>
               </Card>
             );
           })}

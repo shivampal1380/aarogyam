@@ -7,7 +7,7 @@ export const RegistrationCTA = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="hero-gradient py-14 sm:py-28">
+    <section className="hero-gradient py-10 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
           ref={ref}
@@ -15,14 +15,14 @@ export const RegistrationCTA = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+          <h2 className="text-2xl font-bold text-white sm:text-4xl lg:text-5xl">
             Ready to Transform Your Life?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-white/80">
+          <p className="mx-auto mt-3 max-w-xl text-base text-white/80 sm:text-lg">
             Join 3000+ people who have already transformed their lives. Register for our workshop at just ₹99.
           </p>
 
-          <div className="mt-10">
+          <div className="mt-6 sm:mt-10">
             <Link to="/register">
               <Button size="xl" className="animate-pulse-glow animate-shimmer">
                 Book Your Seat @ ₹99
@@ -31,7 +31,7 @@ export const RegistrationCTA = () => {
             </Link>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:mt-8 sm:gap-3">
             {["Instant Confirmation", "Secure Payment"].map((text) => (
               <span key={text} className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/15 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm">
                 ✓ {text}
