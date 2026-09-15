@@ -1,6 +1,6 @@
-# Aarogyam Wellness Centre — Workshop Registration Application
+# Blissful Wellness Centre — Workshop Registration Application
 
-Production-ready full stack application for maximizing paid workshop registrations at Aarogyam Wellness Centre.
+Production-ready full stack application for maximizing paid workshop registrations at Blissful Wellness Centre.
 
 ## Tech Stack
 
@@ -67,7 +67,7 @@ Edit `client/.env`:
 VITE_API_URL=http://localhost:5000/api
 VITE_RAZORPAY_KEY_ID=rzp_test_your_key_id
 VITE_WHATSAPP_NUMBER=919999999999
-VITE_WHATSAPP_MESSAGE=Hello Aarogyam Wellness Centre, I have successfully registered for the workshop. Thank You.
+VITE_WHATSAPP_MESSAGE=Hello Blissful Wellness Centre, I have successfully registered for the workshop. Thank You.
 ```
 
 ### 3. Set up database

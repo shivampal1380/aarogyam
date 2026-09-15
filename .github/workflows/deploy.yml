@@ -28,7 +28,7 @@ jobs:
       VITE_GOOGLE_SHEETS_URL: "https://script.google.com/macros/s/AKfycbyW891JG5YerU-0f3s3o-a-jXKG-4GGOcusqXRMkVqaSg5sgCeZIxWr58yVneDaZu6SmA/exec"
       VITE_RAZORPAY_PAYMENT_URL: "https://pages.razorpay.com/pl_TDkjJ5JipKcrxH/view"
       VITE_WHATSAPP_NUMBER: "919870003571"
-      VITE_WHATSAPP_MESSAGE: "Hello Aarogyam Wellness Centre, I have successfully registered for the workshop. Thank You."
+      VITE_WHATSAPP_MESSAGE: "Hello Blissful Wellness Centre, I have successfully registered for the workshop. Thank You."
     steps:
       - name: Checkout
         uses: actions/checkout@v4

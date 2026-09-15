@@ -14,7 +14,7 @@ export const Footer = () => {
                 <Heart className="h-5 w-5" fill="white" />
               </div>
               <div>
-                <span className="text-lg font-bold text-white">Aarogyam</span>
+                <span className="text-lg font-bold text-white">Blissful</span>
                 <span className="block text-xs text-gray-400">Wellness Centre</span>
               </div>
             </div>
@@ -66,7 +66,7 @@ export const Footer = () => {
 
         <div className="mt-12 border-t border-gray-800 pt-8 text-center">
           <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Aarogyam Wellness Centre. All rights reserved.
+            &copy; {new Date().getFullYear()} Blissful Wellness Centre. All rights reserved.
           </p>
         </div>
       </div>

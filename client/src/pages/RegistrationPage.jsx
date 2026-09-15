@@ -86,8 +86,8 @@ const RegistrationPage = () => {
   return (
     <>
       <Helmet>
-        <title>Register for Workshop - Aarogyam Wellness Centre</title>
-        <meta name="description" content="Register for the Aarogyam Wellness Workshop on 23rd & 24th July 2026. Pay just ₹99 and start your transformation journey." />
+        <title>Register for Workshop - Blissful Wellness Centre</title>
+        <meta name="description" content="Register for the Blissful Wellness Workshop on 23rd & 24th July 2026. Pay just ₹99 and start your transformation journey." />
       </Helmet>
 
       <main className="min-h-screen bg-gray-50 pt-8 pb-16">

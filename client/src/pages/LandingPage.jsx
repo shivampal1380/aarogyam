@@ -15,22 +15,22 @@ const LandingPage = () => {
   return (
     <>
       <Helmet>
-        <title>Aarogyam Wellness Centre | Achieve Weight Loss or Weight Gain Naturally</title>
-        <meta name="description" content="Aarogyam Wellness Centre - Scientifically guided personalized wellness programs. Achieve weight loss or weight gain up to 50 KG naturally. Join our workshop on 23rd & 24th July 2026 for just ₹99." />
+        <title>Blissful Wellness Centre | Achieve Weight Loss or Weight Gain Naturally</title>
+        <meta name="description" content="Blissful Wellness Centre - Scientifically guided personalized wellness programs. Achieve weight loss or weight gain up to 50 KG naturally. Join our workshop on 23rd & 24th July 2026 for just ₹99." />
         <link rel="canonical" href="https://aarogyamwellness.com" />
-        <meta property="og:title" content="Aarogyam Wellness Centre | Achieve Weight Loss or Weight Gain Naturally" />
+        <meta property="og:title" content="Blissful Wellness Centre | Achieve Weight Loss or Weight Gain Naturally" />
         <meta property="og:description" content="Scientifically guided personalized wellness programs. Join our workshop on 23rd & 24th July 2026 for just ₹99." />
         <meta property="og:url" content="https://aarogyamwellness.com" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Aarogyam Wellness Centre | Workshop Registration" />
+        <meta name="twitter:title" content="Blissful Wellness Centre | Workshop Registration" />
         <meta name="twitter:description" content="Achieve weight loss or weight gain up to 50 KG naturally. Join for ₹99." />
 
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Aarogyam Wellness Centre",
+            name: "Blissful Wellness Centre",
             description: "Scientifically guided personalized wellness programs for weight loss and weight gain",
             url: "https://aarogyamwellness.com",
             priceRange: "₹99",

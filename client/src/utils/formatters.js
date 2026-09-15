@@ -6,7 +6,7 @@ export const getWhatsAppLink = (message = "") => {
 };
 
 export const getWhatsAppRegistrationLink = (fullName = "I") => {
-  const message = `Hello Aarogyam Wellness Centre,\n\nI have successfully registered for the workshop.\n\nThank You.`;
+  const message = `Hello Blissful Wellness Centre,\n\nI have successfully registered for the workshop.\n\nThank You.`;
   return getWhatsAppLink(message);
 };
 
