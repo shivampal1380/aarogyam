@@ -206,4 +206,4 @@ npm run build
 
 ## License
 
-Private — Aarogyam Wellness Centre
+Private — Aarogyam Wellness Centr

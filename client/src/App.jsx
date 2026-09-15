@@ -1,5 +1,5 @@
-import { lazy, Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import { lazy, Suspense, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Footer } from "./components/layout/Footer";
 import { WhatsAppButton } from "./components/layout/WhatsAppButton";
 import { Spinner } from "./components/ui/Spinner";
@@ -13,9 +13,20 @@ const LoadingFallback = () => (
   </div>
 );
 
+function PageViewTracker() {
+  const location = useLocation();
+  useEffect(() => {
+    if (window.fbq) {
+      window.fbq("track", "PageView");
+    }
+  }, [location]);
+  return null;
+}
+
 function App() {
   return (
     <div className="min-h-screen">
+      <PageViewTracker />
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
