@@ -22,9 +22,9 @@ export const Footer = () => {
               Making India Healthier, Fitter & Happier through scientifically guided nutrition and lifestyle coaching.
             </p>
             <div className="space-y-2">
-              <a href="mailto:aarogyamwellness@gmail.com" className="flex items-center gap-2 text-sm text-gray-400 hover:text-emerald-400 transition-colors">
+              <a href="mailto:padysing@hotmail.com" className="flex items-center gap-2 text-sm text-gray-400 hover:text-emerald-400 transition-colors">
                 <Mail className="h-4 w-4" />
-                aarogyamwellness@gmail.com
+                padysing@hotmail.com
               </a>
               <a href="tel:+919076003571" className="flex items-center gap-2 text-sm text-gray-400 hover:text-emerald-400 transition-colors">
                 <Phone className="h-4 w-4" />
